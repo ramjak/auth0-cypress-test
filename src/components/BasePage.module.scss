@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.AppLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.WrapperCard {
+  padding: 12px;
+  min-width: 300px;
+  max-width: 80%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: AppLogoSpin infinite 20s linear;
+  }
+}
+
+$navHeaderHeight: 64px;
+
+.navHeader {
+  height: $navHeaderHeight;
+}
+
+.contentWrapper {
+  background-color: #282c34;
+  min-height: calc(100vh - #{$navHeaderHeight});
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom: 48px;
+}
+
+.AppLink {
+  color: #61dafb;
+}
+
+@keyframes AppLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.appTitle {
+  width: 100%;
+  text-align: left;
+}
+
+.navButton {
+  color: #ffffff;
+}
